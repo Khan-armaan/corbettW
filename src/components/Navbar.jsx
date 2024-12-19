@@ -38,8 +38,8 @@ export default function Navbar() {
                         <Link to="/main4#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
                     </div>
                     <div className='hidden lg:flex gap-8'>
-                        <Link to="/faqs" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQs</Link>
-                        <Link to="/about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
+                        <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
+                        <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@ export default function Navbar() {
                     <Link to="/main2#hero2" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Safari Booking</Link>
                     <Link to="/main3#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Hotels</Link>
                     <Link to="/main4#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
-                    <Link to="/faqs" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQs</Link>
-                    <Link to="/about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
+                    <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
+                    <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
                 </div>
             </div>
         </nav>

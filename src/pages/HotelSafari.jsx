@@ -1,6 +1,19 @@
 import hotelImage from '../assets/hotel.png'
+import { useNavigate } from 'react-router-dom';
 
 export default function HotelSafari() {
+    const navigate = useNavigate();
+
+    const handleScroll = () => {
+        navigate('/');  // Navigate to home page
+        setTimeout(() => {
+            const element = document.getElementById('hero1');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100);  // Small delay to ensure navigation completes
+    };
+
     return (
         <div className="flex flex-col lg:flex-row gap-8 p-4 lg:p-8">
             {/* Left Card */}
@@ -29,11 +42,13 @@ export default function HotelSafari() {
                             <strong>Exclusive Packages:</strong> Book early to grab exciting deals and make your Jim Corbett adventure unforgettable!
                         </li>
                     </ul>
-                    <button className="mt-4 lg:mt-8 bg-[#eeff41] text-black px-6 lg:px-8 py-2 lg:py-3 
-                                     rounded-full font-semibold text-sm lg:text-base
-                                     transform transition-all duration-300
-                                     hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
-                                     active:scale-95 hover:bg-[#f4ff6a]">
+                    <button 
+                        onClick={handleScroll}
+                        className="mt-4 lg:mt-8 bg-[#eeff41] text-black px-6 lg:px-8 py-2 lg:py-3 
+                                 rounded-full font-semibold text-sm lg:text-base
+                                 transform transition-all duration-300
+                                 hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
+                                 active:scale-95 hover:bg-[#f4ff6a]">
                         Book now
                     </button>
                 </div>
@@ -71,11 +86,13 @@ export default function HotelSafari() {
 
                     <p className="italic mt-6">Book our hotel + safari package to enjoy luxury and adventure at a discounted rate, making your trip both memorable and budget-friendly!</p>
 
-                    <button className="mt-4 bg-[#eeff41] px-6 lg:px-8 py-2 lg:py-3 
-                                     rounded-full font-semibold text-sm lg:text-base
-                                     transform transition-all duration-300
-                                     hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
-                                     active:scale-95 hover:bg-[#f4ff6a]">
+                    <button 
+                        onClick={handleScroll}
+                        className="mt-4 bg-[#eeff41] px-6 lg:px-8 py-2 lg:py-3 
+                                 rounded-full font-semibold text-sm lg:text-base
+                                 transform transition-all duration-300
+                                 hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
+                                 active:scale-95 hover:bg-[#f4ff6a]">
                         Enquire now
                     </button>
                 </div>

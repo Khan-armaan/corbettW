@@ -1,12 +1,13 @@
-import { useNavigate } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import enquire1 from '../assets/enquire1.jpg';
 import enquire from '../assets/enquire.jpg';
 
 export default function Safari() {
-    const navigate = useNavigate();
-
-    const handleEnquire = () => {
-        navigate('/enquire');
+    const handleScroll = () => {
+        const element = document.getElementById('hero1');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -22,14 +23,16 @@ export default function Safari() {
                     <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-6 text-shadow-lg tracking-wider">Safari</h1>
                     <h2 className="text-2xl md:text-4xl font-semibold mb-2 md:mb-3 text-shadow-md tracking-wide">Jeep Safari</h2>
                     <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide">Canter Safari</h2>
-                    <button 
-                        onClick={handleEnquire}
-                        className="bg-yellow-300 text-black px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-yellow-400 
-                                 font-bold text-base md:text-lg transform hover:scale-105 transition-all duration-300 
-                                 shadow-lg hover:shadow-xl"
-                    >
-                        Enquire now
-                    </button>
+                    <Link to="/#hero1">
+                        <button 
+                            onClick={handleScroll}
+                            className="bg-yellow-300 text-black px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-yellow-400 
+                                     font-bold text-base md:text-lg transform hover:scale-105 transition-all duration-300 
+                                     shadow-lg hover:shadow-xl"
+                        >
+                            Enquire now
+                        </button>
+                    </Link>
                 </div>
             </div>
 
@@ -44,14 +47,16 @@ export default function Safari() {
                     <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap">1 Night 2 days package</h2>
                     <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap">2 Night 3 days package</h2>
                     <h2 className="text-xl md:text-3xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide whitespace-nowrap">3 Night 4 days package</h2>
-                    <button 
-                        onClick={handleEnquire}
-                        className="bg-yellow-300 text-black px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-yellow-400 
-                                 font-bold text-base md:text-lg transform hover:scale-105 transition-all duration-300 
-                                 shadow-lg hover:shadow-xl"
-                    >
-                        Enquire now
-                    </button>
+                    <Link to="/#hero1">
+                        <button 
+                            onClick={handleScroll}
+                            className="bg-yellow-300 text-black px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-yellow-400 
+                                     font-bold text-base md:text-lg transform hover:scale-105 transition-all duration-300 
+                                     shadow-lg hover:shadow-xl"
+                        >
+                            Enquire now
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

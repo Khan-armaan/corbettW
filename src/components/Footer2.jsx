@@ -14,25 +14,17 @@ export default function Footer2() {
                             </Link>
                         </div>
                         <div>
-                            <Link to="/main2#safari" className="hover:underline">
-                                Safari
+                            <Link to="/main2#hero2" className="hover:underline">
+                                Safari Booking
                             </Link>
                         </div>
+                     
                         <div>
-                            <Link to="/main2#booking" className="hover:underline">
-                                Booking
+                            <Link to="/main4#hero3" className="hover:underline">
+                                Night stay
                             </Link>
                         </div>
-                        <div>
-                            <Link to="/main2#night" className="hover:underline">
-                                Night
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/main2#stay" className="hover:underline">
-                                Stay
-                            </Link>
-                        </div>
+                     
                     </nav>
                 </div>
 

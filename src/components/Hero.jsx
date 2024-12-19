@@ -1,15 +1,37 @@
 import wallpaperImage from '../assets/wallpaperImage.jpeg'
+import wallpaperImage2 from '../assets/wallpaper2.jpeg'
+import wallpaperImage3 from '../assets/wallpaper3.jpg'
 import Form from './Form'
+import { useState, useEffect } from 'react'
 
 export default function Hero() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
+    
+    const backgroundImages = [
+        wallpaperImage,
+        wallpaperImage3,
+        wallpaperImage2
+    
+    ]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => 
+                prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+            )
+        }, 3000)
+
+        return () => clearInterval(interval)
+    }, [])
+
     return (
-        <div className="relative min-h-screen" id="hero1">
-            {/* Background Image */}
+        <div id="hero1" className="relative min-h-screen" >
+            {/* Background Image with fade transition */}
             <div className="absolute inset-0">
                 <img 
-                    src={wallpaperImage} 
+                    src={backgroundImages[currentImageIndex]} 
                     alt="Safari Experience" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-opacity duration-1000"
                 />
                 <div className="absolute inset-0 bg-black/30" />
             </div>

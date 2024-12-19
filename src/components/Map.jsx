@@ -45,7 +45,7 @@ export default function Map() {
                     className="w-full h-[400px] rounded-3xl overflow-hidden"
                     style={{ 
                         backgroundColor: '#D9D9D952',
-                        border: '2px solid #8BA888'
+                        border: '4px solid #8BA888'
                     }}
                 ></div>
             </div>

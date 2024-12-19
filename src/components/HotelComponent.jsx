@@ -1,4 +1,15 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function HotelComponent({ hotelName, price, location, paragraph, image, star }) {
+    const navigate = useNavigate()
+
+    const handleBookNowClick = () => {
+        navigate('/')
+        setTimeout(() => {
+            document.getElementById('hero1')?.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+    }
+
     return (
         <div className="flex flex-col md:flex-row gap-4 max-w-[1000px] p-4 rounded-[20px] bg-[rgba(217,217,217,0.48)]">
             <div className="w-full md:w-[200px] h-[200px] bg-[#D9D9D9] rounded-lg">
@@ -30,7 +41,10 @@ export default function HotelComponent({ hotelName, price, location, paragraph, 
                 </div>
 
                 <div className="flex justify-center md:justify-end items-center mt-4 md:mt-2">
-                    <button className="w-full md:w-auto bg-[rgba(217,217,217,0.7)] border-none px-6 py-2 rounded-lg text-sm cursor-pointer text-white hover:bg-[rgba(217,217,217,0.9)] hover:scale-105 transition-all duration-300">
+                    <button 
+                        onClick={handleBookNowClick}
+                        className="w-full md:w-auto bg-[rgba(217,217,217,0.7)] border-none px-6 py-2 rounded-lg text-sm cursor-pointer text-white hover:bg-[rgba(217,217,217,0.9)] hover:scale-105 transition-all duration-300"
+                    >
                         Book now
                     </button>
                 </div>
