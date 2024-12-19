@@ -2,7 +2,7 @@ import backgroundImage from '../assets/wallpaperImage.jpeg'
 
 export default function Hero2() {
     return (
-        <div id="hero2" className="relative" >
+        <div id="hero2" className="relative w-full overflow-x-hidden px-4 md:px-8" >
             {/* Background Image Container */}
             <div className="max-w-6xl mx-auto h-[200px] rounded-2xl overflow-hidden my-8 relative">
                 <div 

@@ -25,19 +25,20 @@ export default function MainPage2() {
     }, [location]);
 
     return (
-        <div style={{ backgroundColor: '#548664' }}>
+        <div className="w-full min-h-screen overflow-x-hidden" style={{ backgroundColor: '#548664' }}>
             <Navbar />
-            <Hero2 />   
-            <OverView />
-            <Gallery />
-            <Accomodation />
-            <Map />
-            <SafariPrizes />
-            <Gypsy />
-            <Canter />
-            <PreFooterMain2 />
-            <Footer2 />
-            
+            <div className="w-full overflow-x-hidden">
+                <Hero2 />   
+                <OverView />
+                <Gallery />
+                <Accomodation />
+                <Map />
+                <SafariPrizes />
+                <Gypsy />
+                <Canter />
+                <PreFooterMain2 />
+                <Footer2 />
+            </div>
         </div>
     )
 }

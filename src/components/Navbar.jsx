@@ -5,12 +5,13 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-[#00580A] px-8 py-4 fixed top-0 left-0 right-0 z-50">
+        <nav className="bg-[#00580A] px-8 py-4 fixed top-0 left-0 right-0 z-50 shadow-lg">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="logo">
-                        <Link to="/" className="text-white text-2xl font-semibold no-underline">
-                            CorbettRoar
+                        <Link to="/" className="text-white text-2xl md:text-3xl font-bold no-underline tracking-wider font-serif flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+                            <span className="text-yellow-400">Corbett</span>
+                            <span className="text-white">Roar</span>
                         </Link>
                     </div>
                     
