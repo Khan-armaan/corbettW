@@ -23,9 +23,9 @@ export default function Form() {
         };
 
         // Your EmailJS credentials
-        const serviceId = 'service_4im48v7'  // Use your actual service ID
-        const templateId = 'template_dy7sksa' // Use your actual template ID
-        const publicKey = 'RScNxoVnVvCSs2fNk'  // Use your actual public key
+        const serviceId = 'service_91v72vd'  // Use your actual service ID
+        const templateId = 'template_0nq8wq8' // Use your actual template ID
+        const publicKey = 'UjsPkSvZZNxv5lNq7'  // Use your actual public key
 
         console.log('Sending email with params:', templateParams);
 
