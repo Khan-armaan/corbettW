@@ -43,7 +43,7 @@ export default function HotelComponent({ hotelName, price, location, paragraph, 
                 <div className="flex justify-center md:justify-end items-center mt-4 md:mt-2">
                     <button 
                         onClick={handleBookNowClick}
-                        className="w-full md:w-auto bg-[rgba(217,217,217,0.7)] border-none px-6 py-2 rounded-lg text-sm cursor-pointer text-white hover:bg-[rgba(217,217,217,0.9)] hover:scale-105 transition-all duration-300"
+                        className="w-full md:w-auto bg-yellow-500 border-none px-6 py-2 rounded-lg text-sm cursor-pointer text-white hover:bg-yellow-700 hover:scale-105 transition-all duration-300"
                     >
                         Book now
                     </button>
