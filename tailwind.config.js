@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +10,15 @@ export default {
         'playfair': ['"Playfair Display"', 'serif'],
         'poppins': ['Poppins', 'sans-serif'],
         'mont': ['Montserrat', 'sans-serif'],
+      },
+      animation: {
+        marquee: 'marquee 15s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
     },
   },

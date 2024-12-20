@@ -11,7 +11,7 @@ export default function HotelComponent({ hotelName, price, location, paragraph, 
     }
 
     return (
-        <div className="flex flex-col md:flex-row gap-4 max-w-[1000px] p-4 rounded-[20px] bg-[rgba(217,217,217,0.48)]">
+        <div className="flex flex-col md:flex-row gap-4 max-w-[1000px] p-4 rounded-[20px] bg-[rgba(217,217,217,0.48)] ">
             <div className="w-full md:w-[200px] h-[200px] bg-[#D9D9D9] rounded-lg">
                 <img 
                     src={image} 

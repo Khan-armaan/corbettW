@@ -1,4 +1,3 @@
-
 import { useNavigate } from 'react-router-dom'
 
 export default function Hero3({ heading , wallpaperImage}) {
@@ -24,7 +23,7 @@ export default function Hero3({ heading , wallpaperImage}) {
             />
             
             {/* Content Overlay */}
-            <div className="relative h-full flex flex-col justify-end pb-12 px-8 md:px-10">
+            <div className="relative h-full flex flex-col justify-end pb-16 px-8 md:px-10">
                 <h1 className="pt-20 text-white text-2xl md:text-5xl font-bold max-w-3xl mb-8 leading-tight hover:text-[#f6fd26] transition-colors duration-300">
                     {heading}
                 </h1>
@@ -32,7 +31,7 @@ export default function Hero3({ heading , wallpaperImage}) {
                 <div className="w-full flex justify-end">
                     <button 
                         onClick={handleBookNowClick}
-                        className="bg-[#548664] text-white px-8 py-3 rounded-lg text-xl hover:bg-[#3e6349] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+                        className="bg-[#548664] text-white px-8 py-3 rounded-lg text-xl hover:bg-[#3e6349] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out mt-20"
                     >
                         Book now
                     </button>
