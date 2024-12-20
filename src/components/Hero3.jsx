@@ -25,7 +25,7 @@ export default function Hero3({ heading }) {
             
             {/* Content Overlay */}
             <div className="relative h-full flex flex-col justify-end pb-12 px-8 md:px-10">
-                <h1 className="pt-20 text-white text-2xl md:text-5xl font-bold max-w-3xl mb-8 leading-tight hover:text-[#548664] transition-colors duration-300">
+                <h1 className="pt-20 text-white text-2xl md:text-5xl font-bold max-w-3xl mb-8 leading-tight hover:text-[#f6fd26] transition-colors duration-300">
                     {heading}
                 </h1>
                 

@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [showHotelDropdown, setShowHotelDropdown] = useState(false);
 
     return (
         <nav className="bg-[#00580A] px-8 py-4 fixed top-0 left-0 right-0 z-50 shadow-lg">
@@ -35,12 +36,33 @@ export default function Navbar() {
                     <div className="hidden lg:flex gap-8">
                         <Link to="/#hero1" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</Link>
                         <Link to="/main2#hero2" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Safari Booking</Link>
-                        <Link to="/main3#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Hotels</Link>
-                        <Link to="/main4#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
+                        
+                        {/* Hotels Dropdown */}
+                        <div className="relative">
+                            <button 
+                                className="text-white hover:text-gray-200"
+                                onMouseEnter={() => setShowHotelDropdown(true)}
+                                onMouseLeave={() => setShowHotelDropdown(false)}
+                            >
+                                Hotels
+                            </button>
+                            {showHotelDropdown && (
+                                <div 
+                                    className="absolute top-full left-0 bg-[#00580A] py-2 px-4 rounded shadow-lg"
+                                    onMouseEnter={() => setShowHotelDropdown(true)}
+                                    onMouseLeave={() => setShowHotelDropdown(false)}
+                                >
+                                    <Link to="/main4" className="block text-white no-underline hover:text-gray-200 py-1">Corbett</Link>
+                                    <Link to="/main3" className="block text-white no-underline hover:text-gray-200 py-1">Nainital</Link>
+                                </div>
+                            )}
+                        </div>
+
+                        <Link to="/main2#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
                     </div>
                     <div className='hidden lg:flex gap-8'>
-                        <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
-                        <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
+                        <Link to="/main5" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
+                        <Link to="/main5" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
                     </div>
                 </div>
             </div>
@@ -50,10 +72,11 @@ export default function Navbar() {
                 <div className="flex flex-col gap-4">
                     <Link to="/#hero1" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</Link>
                     <Link to="/main2#hero2" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Safari Booking</Link>
-                    <Link to="/main3#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Hotels</Link>
-                    <Link to="/main4#hero3" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
-                    <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
-                    <Link to="/main3#about" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
+                    <Link to="/main4" className="text-white no-underline hover:text-gray-200 pl-4">Hotels - Corbett</Link>
+                    <Link to="/main3" className="text-white no-underline hover:text-gray-200 pl-4">Hotels - Nainital</Link>
+                    <Link to="/main2" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Night Stay</Link>
+                    <Link to="/main5" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact us</Link>
+                    <Link to="/main5" className="text-white no-underline hover:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About us</Link>
                 </div>
             </div>
         </nav>

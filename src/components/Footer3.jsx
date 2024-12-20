@@ -24,6 +24,12 @@ export default function Footer3() {
                     wildlife conservation to every adventure.
                 </p>
             </div>
+            <div className="text-center">
+                    <p className="text-sm text-white">
+                        © Copyright 2024| corbettroar| All rights reserved
+                    </p>
+                </div>
         </div>
+        
     )
 }

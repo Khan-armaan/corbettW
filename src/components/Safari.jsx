@@ -1,6 +1,6 @@
 import {  Link } from 'react-router-dom';
 import enquire1 from '../assets/enquire1.jpg';
-import enquire from '../assets/enquire.jpg';
+import enquire from '../assets/gallery1.jpg';
 
 export default function Safari() {
     const handleScroll = () => {
@@ -20,9 +20,9 @@ export default function Safari() {
                     className="w-full h-full object-cover rounded-2xl shadow-lg"
                 />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-                    <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-6 text-shadow-lg tracking-wider">Safari</h1>
-                    <h2 className="text-2xl md:text-4xl font-semibold mb-2 md:mb-3 text-shadow-md tracking-wide">Jeep Safari</h2>
-                    <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide">Canter Safari</h2>
+                    <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-6 text-shadow-lg tracking-wider hover:text-yellow-300 hover:scale-110 transition-all duration-300">Safari</h1>
+                    <h2 className="text-2xl md:text-4xl font-semibold mb-2 md:mb-3 text-shadow-md tracking-wide hover:text-yellow-300 hover:scale-110 transition-all duration-300">Jeep Safari</h2>
+                    <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide hover:text-yellow-300 hover:scale-110 transition-all duration-300">Canter Safari</h2>
                     <Link to="/#hero1">
                         <button 
                             onClick={handleScroll}
@@ -44,9 +44,9 @@ export default function Safari() {
                     className="w-full h-full object-cover rounded-2xl shadow-lg"
                 />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-                    <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap">1 Night 2 days package</h2>
-                    <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap">2 Night 3 days package</h2>
-                    <h2 className="text-xl md:text-3xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide whitespace-nowrap">3 Night 4 days package</h2>
+                    <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap hover:text-yellow-300 hover:scale-110 transition-all duration-300">1 Night 2 days package</h2>
+                    <h2 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-shadow-md tracking-wide whitespace-nowrap hover:text-yellow-300 hover:scale-110 transition-all duration-300">2 Night 3 days package</h2>
+                    <h2 className="text-xl md:text-3xl font-semibold mb-4 md:mb-8 text-shadow-md tracking-wide whitespace-nowrap hover:text-yellow-300 hover:scale-110 transition-all duration-300">3 Night 4 days package</h2>
                     <Link to="/#hero1">
                         <button 
                             onClick={handleScroll}

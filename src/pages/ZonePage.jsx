@@ -13,13 +13,13 @@ export default function ZonePage() {
   return (
     <div className="container mx-auto p-4 lg:p-8 mt-20 lg:mt-28">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 place-items-center">
-        <Zone zone='Dhikala' zoneText='Dhikala is the main zone of Corbett National Park. It is the most popular zone for tourists and offers a wide range of activities and attractions.' 
+        <Zone zone='Dhikala' zoneText='Dhikala is the main zone of Corbett National Park. It is the most popular zone for tourists.' 
         image={dhikalaImg} />
 
-        <Zone zone='Bijrani' zoneText='Bijrani Zone is the first choice among day tourists. Its entrance is at Aamdanda which is about 1 km. away from Ramnagar.'
+        <Zone zone='Bijrani' zoneText='Bijrani Zone is the first choice among day tourists. Its entrance is at Aamdanda .'
          image={bijraniImg} />
 
-        <Zone zone='Jhirna' zoneText='Located on the southern edge of the Corbett National Park, this zone was included much later in the tiger reserve zone.' 
+        <Zone zone='Jhirna' zoneText='Located on the southern edge of the Corbett National Park.' 
         image={jhirnaImg} />
 
         <Zone zone='Garjiya' zoneText='Girija is a new safari zone being added which is now available for tourists for enjoying the safari.'
@@ -28,13 +28,13 @@ export default function ZonePage() {
         <Zone zone='Sitabani' zoneText=' The zone is treated as the Buffer area of the tiger reserve and is open for everyone visiting here.' 
         image={sitabaniImg} />
 
-        <Zone zone='Pakhro' zoneText='. As the world opens up to travel and venture daily new exciting aspects beyond beauty then choose destinations away from the hustle and bustle of big cities.' 
+        <Zone zone='Phato' zoneText='As the world opens up to travel and venture daily new exciting aspects beyond beauty .' 
           image={pakhroImg} />
 
-        <Zone zone='Dhela' zoneText='The Dhela zone is the latest added zone in the tourism zones of the Corbett National Park which was opened in December 2014 for the safari tour.' 
+        <Zone zone='Dhela' zoneText='The Dhela zone is the latest added zone in the tourism zones of the Corbett National Park.' 
         image={dhelaImg} />
 
-        <Zone zone='Durga Devi' zoneText='he zone is situated on the northeast periphery of the Corbett forest which is highly rich in species of flora and fauna.' 
+        <Zone zone='Durga Devi' zoneText='the zone is situated on the northeast periphery of the Corbett forest.' 
         image={durgaDeviImg} />
       </div>
     </div>

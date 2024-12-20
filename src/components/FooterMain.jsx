@@ -17,6 +17,12 @@ export default function FooterMain() {
                         <li><a href="/main3#hero3" className="text-white hover:text-gray-200 text-xl">Hotel</a></li>
                         <li><a href="/main4#hero3" className="text-white hover:text-gray-200 text-xl">Night Stay</a></li>
                     </ul>
+
+                </div>
+                <div className="text-center">
+                    <p className="text-sm text-white">
+                        © Copyright 2024| corbettroar| All rights reserved
+                    </p>
                 </div>
             </div>
         </footer>
