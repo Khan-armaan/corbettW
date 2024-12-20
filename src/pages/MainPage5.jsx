@@ -1,6 +1,9 @@
+import Navbar from "../components/Navbar"
+
 export default function MainPage5(){
     return(
        <div className="min-h-screen bg-[#548664]">
+        <Navbar />
         <Footer4 />
        </div>
     )
