@@ -1,7 +1,7 @@
-import wallpaperImage from '../assets/wallpaperImage.jpeg'
+
 import { useNavigate } from 'react-router-dom'
 
-export default function Hero3({ heading }) {
+export default function Hero3({ heading , wallpaperImage}) {
     const navigate = useNavigate()
 
     const handleBookNowClick = () => {

@@ -1,5 +1,5 @@
 import {  Link } from 'react-router-dom';
-import enquire1 from '../assets/enquire1.jpg';
+import enquire1 from '../assets/side.jpg';
 import enquire from '../assets/gallery1.jpg';
 
 export default function Safari() {
