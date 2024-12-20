@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function Form() {
     const [name, setName] = useState('')
@@ -28,7 +30,7 @@ export default function Form() {
         console.log('Sending email with params:', templateParams);
 
         try {
-            console.log('Attempting to send email...');
+          
             const result = await emailjs.send(
                 serviceId,
                 templateId,
@@ -36,10 +38,17 @@ export default function Form() {
                 publicKey
             );
             
-            console.log('Email sent successfully:', result);
+          
             
             if (result.text === 'OK') {
-                alert('Enquiry submitted successfully!');
+                toast.success('Enquiry submitted successfully!', {
+                    position: "bottom-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                });
                 // Reset form
                 setName('');
                 setNumber('');
@@ -50,7 +59,7 @@ export default function Form() {
             console.error('Detailed error:', error);
             console.error('Error status:', error.status);
             console.error('Error text:', error.text);
-            alert(`Error submitting form: ${error.message}`);
+            toast.error(`Error submitting form: ${error.message}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -58,7 +67,8 @@ export default function Form() {
 
     return(
         <>
-         <div className="bg-white/30 backdrop-blur-md p-6 rounded-lg shadow-lg 
+            <ToastContainer />
+            <div className="bg-white/30 backdrop-blur-md p-6 rounded-lg shadow-lg 
                     w-full max-w-md mx-4 md:mx-0">
                     <h3 className="text-xl md:text-2xl font-semibold mb-6 
                         text-center md:text-left text-gray-900">
