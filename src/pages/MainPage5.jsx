@@ -10,7 +10,7 @@ export default function MainPage5(){
 }
 function Footer4() {
     return (
-        <div id="about" className="flex flex-col gap-8 w-full min-h-screen px-4 py-8">
+        <div  className="flex flex-col gap-8 w-full min-h-screen px-4 py-24">
             {/* Contact Section - Added flex-1 for dynamic height */}
             <div className="max-w-6xl mx-auto w-full flex-1 flex items-center">
                 <div className="bg-[#F4F0F070] rounded-lg p-8 transition-all duration-300 hover:bg-[#F4F0F090] hover:shadow-lg hover:scale-[1.02] cursor-pointer w-full">
