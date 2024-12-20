@@ -73,9 +73,15 @@ export default function Form() {
                     type="date" 
                     name="date"
                     value={date}
+                    min={new Date().toISOString().split('T')[0]}
                     className="w-full p-2 border rounded-md text-sm md:text-base"
                     required
                 />
+                {date && new Date(date) < new Date(new Date().toISOString().split('T')[0]) && (
+                    <p className="text-red-500 text-sm mt-1">
+                        Please select a future date
+                    </p>
+                )}
             </div>
             <div>
                 <label className="block text-gray-700 mb-2 text-sm md:text-base">
@@ -88,18 +94,32 @@ export default function Form() {
                     value={name}
                     className="w-full p-2 border rounded-md text-sm md:text-base"
                     placeholder="Enter your name"
+                    minLength="4"  // Minimum length of 4 characters
                     required
                 />
+                {name && name.length < 4 && (
+                    <p className="text-red-500 text-sm mt-1">
+                        Name must be at least 4 characters long
+                    </p>
+                )}
             </div>
             <div>
                 <label className="block text-gray-700 mb-2">Mobile No.</label>
                 <input 
-                onChange={(e) => setNumber(e.target.value)}
+                    onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, ''); // Remove non-digits
+                        if (value.length <= 10) { // Only update if length is 10 or less
+                            setNumber(value);
+                        }
+                    }}
                     type="tel" 
                     name="mobile"
                     value={number}
                     className="w-full p-2 border rounded-md"
                     placeholder="Enter your mobile number"
+                    pattern="[0-9]{10}"  // Enforce exactly 10 digits
+                    title="Please enter exactly 10 digits"
+                    maxLength="10"  // Prevent typing more than 10 characters
                     required
                 />
             </div>
