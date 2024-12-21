@@ -53,7 +53,7 @@ export default function Canter() {
                         <ul className="text-sm space-y-2">
                             <li>Morning 6AM to 1AM</li>
                             <li>Evening 1115AM-5PM</li>
-                            <br/>
+                        
 
                           <li>Note : you have to reach 45 minutes before the safari starts</li>
                         </ul>

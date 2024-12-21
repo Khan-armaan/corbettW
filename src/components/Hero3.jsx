@@ -31,7 +31,7 @@ export default function Hero3({ heading , wallpaperImage}) {
                 <div className="w-full flex justify-end">
                     <button 
                         onClick={handleBookNowClick}
-                        className="bg-[#548664] text-white px-8 py-3 rounded-lg text-xl hover:bg-[#3e6349] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out mt-20"
+                        className="bg-[#548664] text-white px-8 py-3 rounded-lg text-xl hover:bg-[#3e6349] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out mt-32 sm:mt-20"
                     >
                         Book now
                     </button>

@@ -6,8 +6,8 @@ export default function Accomodation() {
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Section - Lodge Info */}
                 <div className="rounded-3xl p-8" style={{ backgroundColor: '#D9D9D952' }}>
-                    <h1 className="text-2xl md:text-3xl font-serif text-white mb-6 whitespace-nowrap">
-                        Dhikala forest lodge accommodation
+                    <h1 className="text-2xl  md:text-3xl font-serif text-white mb-6 whitespace-nowrap">
+                        Dhikala forest lodge <br/> accommodation 
                     </h1>
                     
                     <p className="text-white text-lg leading-relaxed mb-8">

@@ -22,10 +22,10 @@ export default function HotelSafari() {
                 <img 
                     src={hotelImage}
                     alt="Hotel view" 
-                    className="w-full h-[400px] lg:h-full object-cover rounded-2xl"
+                    className="w-full h-[500px] sm:h-[400px] lg:h-full object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-black/30 rounded-2xl p-4 lg:p-8 text-white">
-                    <h2 className="text-3xl lg:text-4xl font-serif mb-4 lg:mb-8">Hotel Booking</h2>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif mb-3 sm:mb-4 lg:mb-8">Hotel Booking</h2>
                     <ul className="space-y-2 lg:space-y-4 text-sm lg:text-base">
                         <li>
                             <strong>Affordable Luxury:</strong> Stay in premium accommodations with a perfect balance of comfort and budget-friendly pricing.
@@ -45,7 +45,7 @@ export default function HotelSafari() {
                     </ul>
                     <button 
                         onClick={handleScroll}
-                        className="mt-4 lg:mt-8 bg-[#eeff41] text-black px-6 lg:px-8 py-2 lg:py-3 
+                        className="mt-3 sm:mt-4 lg:mt-8 bg-[#eeff41] text-black px-4 sm:px-6 lg:px-8 py-2 lg:py-3 
                                  rounded-full font-semibold text-sm lg:text-base
                                  transform transition-all duration-300
                                  hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
@@ -60,12 +60,12 @@ export default function HotelSafari() {
                 <img 
                     src={hotelImage1}
                     alt="Safari view" 
-                    className="w-full h-[400px] lg:h-full object-cover rounded-2xl"
+                    className="w-full h-[700px] sm:h-[400px] lg:h-full object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-black/40 rounded-2xl p-4 lg:p-8">
-                    <h2 className="text-3xl lg:text-4xl font-serif text-white mb-4 lg:mb-8">Hotel + Safari Booking</h2>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-white mb-3 sm:mb-4 lg:mb-8">Hotel + Safari Booking</h2>
                     
-                    <div className="space-y-4 lg:space-y-6 text-sm lg:text-base text-white">
+                    <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-sm lg:text-base text-white">
                         <div>
                             <h3 className="font-bold">Stay Amidst Nature:</h3>
                             <p>Book your stay at our premium hotels, offering stunning views and unmatched comfort right near Jim Corbett National Park.</p>
@@ -95,7 +95,7 @@ export default function HotelSafari() {
 
                         <button 
                             onClick={handleScroll}
-                            className="mt-4 bg-[#eeff41] px-6 lg:px-8 py-2 lg:py-3 
+                            className="mt-3 sm:mt-4 bg-[#eeff41] px-4 sm:px-6 lg:px-8 py-2 lg:py-3 
                                      rounded-full font-semibold text-sm lg:text-base
                                      transform transition-all duration-300
                                      hover:scale-105 hover:shadow-lg hover:shadow-[#eeff41]/50
