@@ -1,5 +1,11 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Specifically allow Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow:
 
+# Add your sitemap
 Sitemap: https://corbettroar.com/sitemap.xml
